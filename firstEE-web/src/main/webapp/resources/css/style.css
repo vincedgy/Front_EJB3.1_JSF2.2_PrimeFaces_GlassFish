@@ -1,0 +1,81 @@
+html, body {
+    height: 100%;    
+    width: 100%;
+    margin: 0;
+/*     background-color: #f1fbfb; */
+/*     color: #243C5F; */
+}
+
+h1 {
+    text-align: center;    
+}
+
+section {
+    border: lightgray 1px solid;
+}
+
+#loading {
+    font-weight: bold;
+    font-size: larger;
+    text-align: center;
+    color: red;
+}
+
+#myform {
+    background-color: #e1ebeb;
+    display: block;
+    margin: 0px;
+    padding:10px;
+    border-radius:10px;
+}
+
+#myform ul li {
+    padding-top:5px;
+    list-style: none;
+}
+
+#mForm label {
+    font-weight: bold;
+    color: #F0A000;
+}
+
+#logo {
+	position: fixed;
+	top:0;
+	right:0;
+	height: 80px;	
+}
+
+#header {
+	position:fixed;
+	top:0;
+	background-color: #d1dbeb;
+    display: block;    	
+	width:100%;
+	height:80px;	
+	z-index: 100;
+	border-bottom: 2px solid navy;
+}
+#content {
+	position:relative;
+	left:20px;
+	top:100px;	
+	background-color: #f1fbfb;
+    display: block;   
+	width:80%;	
+}
+
+#footer {
+	position:fixed;
+	bottom:0;
+	background-color: #d1dbeb;
+    display: block;    
+	width:100%;	
+	height:30px;
+	border-top: 2px solid navy;
+	z-index: 100;
+}
+
+checkbox  {
+	list-style-type: circle;
+}

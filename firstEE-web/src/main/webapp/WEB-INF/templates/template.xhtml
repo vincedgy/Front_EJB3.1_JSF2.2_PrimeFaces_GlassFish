@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"  
+      xmlns:p="http://primefaces.org/ui">
+    <f:view contentType="text/html">
+        <h:head>
+            <f:facet name="first">
+                <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
+                <title>PrimeFaces</title>
+            </f:facet>
+        </h:head>
+
+        <h:body>
+
+            <ui:debug rendered="true" hotkey="l"/>	
+            
+            <p:layout fullPage="true">
+                
+                <!-- Header -->
+                <p:layoutUnit position="north" size="120" resizable="true" closable="true" collapsible="true">
+                    <div id="header">
+                        <ui:insert name="header">
+                            <ui:include src="/WEB-INF/templates/header.xhtml" />
+                        </ui:insert>
+                    </div>
+                </p:layoutUnit>
+                
+                <!-- Footer -->
+                <p:layoutUnit position="south" size="100" closable="true" collapsible="true">
+                    <div id="footer">
+                        <ui:insert name="footer">
+                            <ui:include src="/WEB-INF/templates/footer.xhtml" />
+                        </ui:insert>
+                    </div>
+                </p:layoutUnit>
+
+                <!-- Menu -->
+                <p:layoutUnit position="west" size="175" header="Left" collapsible="true">
+                    <div id="leftMenu">
+                        <ui:insert name="leftMenu">
+                            <ui:include src="/WEB-INF/templates/leftMenu.xhtml" />
+                        </ui:insert>
+                    </div>
+                </p:layoutUnit>
+
+                <!-- Content -->
+                <p:layoutUnit position="center">
+                    <div id="content">
+                        <ui:insert name="content">
+                        </ui:insert>
+                    </div>
+                </p:layoutUnit>
+
+            </p:layout>
+
+        </h:body>    
+    </f:view>
+
+</html>

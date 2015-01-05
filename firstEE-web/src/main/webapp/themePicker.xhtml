@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+    <h:body>
+        <ui:composition template="/WEB-INF/templates/template.xhtml">
+            <ui:define name="content">                
+                <h4>
+                    Pickup a theme for this site
+                </h4>
+
+                <h:form>
+                    <p:selectOneMenu id="theme" 
+                                     value="#{layoutMBean.theme}" 
+                                     onchange="submit()"
+                                     valueChangeListener="#{layoutMBean.themeChangeListener}" 
+                                     style="width:125px">
+                        <f:selectItems value="#{layoutMBean.themesList}" />
+                    </p:selectOneMenu>
+                </h:form>                
+            </ui:define>
+            <!-- 	<ui:define name="footer"> -->
+            <!-- 	    Add your footer here or delete to use the default -->
+            <!-- 	</ui:define> -->
+        </ui:composition>
+    </h:body>
+
+</html>
