@@ -1,4 +1,4 @@
-firstEE
+Front_EJB3.1_JSF2.2_PrimeFaces_GlassFish
 =======
 
 Experimentations with EJB 3.1 and JSF 2.2 with PrimeFaces under GlassFish v4.1
